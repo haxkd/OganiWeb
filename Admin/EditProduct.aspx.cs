@@ -58,7 +58,6 @@ namespace OganiWeb.Admin
             string categoryId = CategoryList.SelectedValue;
             string PId = Request.QueryString["PId"];
 
-
             string query = $"UPDATE Product SET ProductName='{productName}',ProductDesc='{productDesc}',ProductPrice='{productPrice}',CatId='{categoryId}' WHERE ProductId='{PId}'";
 
             if (ProductImage.HasFile)

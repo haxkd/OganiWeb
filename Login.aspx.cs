@@ -33,7 +33,6 @@ namespace OganiWeb
                 else
                 {
                     Response.Write("<script>alert('invalid password')</script>");
-
                 }
             }
             else

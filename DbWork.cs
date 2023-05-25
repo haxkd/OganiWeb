@@ -17,5 +17,11 @@ namespace OganiWeb
             return new SqlCommand("SELECT * FROM Product", connection).ExecuteReader();
         }
 
+
+        public SqlDataReader getCartProducts(string uid) {
+            connection.Open();
+            return new SqlCommand($"select * from Product join Cart on Product.ProductId = Cart.pid where uid = '{uid}'", connection).ExecuteReader();
+        }
+
     }
 }

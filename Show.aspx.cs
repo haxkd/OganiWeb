@@ -66,13 +66,11 @@ namespace OganiWeb
             }
             else
             {
-
                 connection.Close();
                 connection.Open();
                 string query = $"INSERT INTO Cart(pid,uid,quantity) VALUES('{pid}','{uid}','{quant}')";
                 new SqlCommand(query, connection).ExecuteNonQuery();
                 Response.Write("<script>alert('product added to cart')</script>");
-
             }
             connection.Close();
         }

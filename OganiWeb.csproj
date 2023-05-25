@@ -72,6 +72,7 @@
     <Content Include="Admin\DeleteProduct.aspx" />
     <Content Include="Admin\EditProduct.aspx" />
     <Content Include="Admin\ShowProduct.aspx" />
+    <Content Include="Cart.aspx" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\elegant-icons.css" />
     <Content Include="css\font-awesome.min.css" />
@@ -159,6 +160,7 @@
     <Content Include="Login.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="Register.aspx" />
+    <Content Include="removeCart.aspx" />
     <Content Include="Show.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -198,6 +200,13 @@
     <Compile Include="Admin\ShowProduct.aspx.designer.cs">
       <DependentUpon>ShowProduct.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DbWork.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -227,6 +236,13 @@
     </Compile>
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="removeCart.aspx.cs">
+      <DependentUpon>removeCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="removeCart.aspx.designer.cs">
+      <DependentUpon>removeCart.aspx</DependentUpon>
     </Compile>
     <Compile Include="Show.aspx.cs">
       <DependentUpon>Show.aspx</DependentUpon>

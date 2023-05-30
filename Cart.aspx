@@ -92,7 +92,7 @@
                         <ul>
                             <li>Total <span id="totalPrice" runat="server">$</span></li>
                         </ul>
-                        <a href="#" class="primary-btn">PROCEED TO CHECKOUT</a>
+                        <a href="/Checkout.aspx" class="primary-btn">PROCEED TO CHECKOUT</a>
                     </div>
                 </div>
             </div>

@@ -75,7 +75,6 @@ namespace OganiWeb
             SqlCommand cmd3 = new SqlCommand(CheckoutProduct, connection);
             cmd3.ExecuteNonQuery();
             connection.Close();
-
         }
     }
 }

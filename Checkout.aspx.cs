@@ -24,7 +24,6 @@ namespace OganiWeb
             }
 
             string uid = Session["uid"].ToString();
-
             connection.Open();
             SqlDataReader rd = new SqlCommand($"select * from Users where uid='{uid}'", connection).ExecuteReader();
             rd.Read();
@@ -34,7 +33,6 @@ namespace OganiWeb
 
         protected void checkoutBtn_Click(object sender, EventArgs e)
         {
-
             string fname1 = fname.Value;
             string lname1 = lname.Value;
             string phone1 = phone.Value;

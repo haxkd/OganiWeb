@@ -12,7 +12,6 @@ namespace OganiWeb
     public partial class Login : System.Web.UI.Page
     {
         SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["connection"].ConnectionString);
-
         protected void Page_Load(object sender, EventArgs e)
         {
         }
